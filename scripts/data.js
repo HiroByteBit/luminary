@@ -1,0 +1,117 @@
+// luminary/scripts/data.js
+const PRODUCTS = [
+  {
+    id: 1,
+    name: "Radiance Serum Drops",
+    category: "SERUM",
+    price: 64,
+    rating: 4.9,
+    reviewCount: 1204,
+    type: "serum",
+    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Brightening", "Vitamin C", "Lightweight"],
+    variants: ["30ml", "50ml"],
+    description: "A potent blend of Vitamin C and botanical extracts designed to illuminate your complexion from within. This lightweight formula absorbs instantly, leaving a dewy, non-greasy finish.",
+    badge: "BESTSELLER"
+  },
+  {
+    id: 2,
+    name: "Velvet Rose Face Oil",
+    category: "OIL",
+    price: 89,
+    rating: 4.8,
+    reviewCount: 847,
+    type: "oil",
+    image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Nourishing", "Anti-aging", "For dry skin"],
+    variants: ["30ml", "60ml"],
+    description: "An indulgent, nutrient-rich oil that mimics the skin's natural sebum. Infused with hand-picked Damask Rose petals to restore elasticity and provide deep hydration.",
+    badge: "NEW"
+  },
+  {
+    id: 3,
+    name: "Forest & Oud Candle",
+    category: "CANDLE",
+    price: 48,
+    rating: 4.7,
+    reviewCount: 2103,
+    type: "candle",
+    image: "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&q=80&w=800",
+    benefits: ["50hr burn", "Hand-poured", "Recyclable vessel"],
+    variants: ["Standard"],
+    description: "Transport your senses to a rain-drenched ancient forest. Notes of damp moss, smoked oud, and crisp cedarwood create a grounding atmosphere for your daily rituals.",
+    badge: null
+  },
+  {
+    id: 4,
+    name: "Inner Glow Capsules",
+    category: "SUPPLEMENT",
+    price: 72,
+    rating: 4.6,
+    reviewCount: 623,
+    type: "supplement",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Collagen", "Biotin", "Hyaluronic acid"],
+    variants: ["30 Day Supply", "90 Day Supply"],
+    description: "Beauty starts from the inside. Our bio-available formula supports hair, nail, and skin health with a clinical-grade blend of marine collagen and essential antioxidants.",
+    badge: null
+  },
+  {
+    id: 5,
+    name: "Ritual Body Butter",
+    category: "BODY",
+    price: 54,
+    rating: 4.8,
+    reviewCount: 991,
+    type: "body",
+    image: "https://images.unsplash.com/photo-1547825407-2d060104b7f8?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Shea butter", "Deep moisture", "Fragrance-free"],
+    variants: ["200ml"],
+    description: "A thick, whipped body cream that melts into the skin. Formulated with raw shea butter and sea buckthorn oil to repair the moisture barrier and soothe irritation.",
+    badge: "LIMITED"
+  },
+  {
+    id: 6,
+    name: "Sacred Mist Toner",
+    category: "TONER",
+    price: 42,
+    rating: 4.5,
+    reviewCount: 1441,
+    type: "toner",
+    image: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Balancing", "Rose water", "Instant refresh"],
+    variants: ["100ml", "200ml"],
+    description: "A fine, weightless mist that balances the skin's pH after cleansing. Infused with sacred lotus extract and organic Bulgarian rose water.",
+    badge: null
+  },
+  {
+    id: 7,
+    name: "Sun Ritual SPF 50",
+    category: "SPF",
+    price: 58,
+    rating: 4.9,
+    reviewCount: 3012,
+    type: "spf",
+    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Lightweight", "No white cast", "Mineral"],
+    variants: ["50ml"],
+    description: "Daily protection that feels like luxury skincare. Our mineral-based formula provides broad-spectrum protection while leaving a silky, breathable finish.",
+    badge: "BESTSELLER"
+  },
+  {
+    id: 8,
+    name: "Sleep & Restore Balm",
+    category: "NIGHT",
+    price: 36,
+    rating: 4.7,
+    reviewCount: 789,
+    type: "night",
+    image: "https://images.unsplash.com/photo-1512496011931-62c29bc7a618?auto=format&fit=crop&q=80&w=800",
+    benefits: ["Lavender", "Chamomile", "Overnight repair"],
+    variants: ["15ml", "30ml"],
+    description: "An intensive overnight treatment for targeted dry patches or as an all-over soothing mask. Infused with calming essential oils to promote deep rest.",
+    badge: null
+  }
+];
+
+window.PRODUCTS = PRODUCTS;

@@ -1,0 +1,134 @@
+/* luminary/styles/theme.css */
+:root {
+    /* PRIMARY PALETTE */
+    --color-cream: #fffdf7;
+    --color-ink: #1a1208;
+    --color-gold: #c9860a;
+    --color-gold-light: #fef3d8;
+    --color-gold-border: #f0d08a;
+    --color-parchment: #f5edd8;
+    --color-mole: #7a6e5f;
+    --color-stone-border: #e8e2d4;
+    --color-white: #ffffff;
+    
+    /* SPACING */
+    --section-padding: 100px;
+    --container-width: 1280px;
+    
+    /* TRANSITIONS */
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-cream);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-mole);
+    line-height: 1.75;
+    background-color: var(--color-cream);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-editorial {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-ink);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    transition: var(--transition-base);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* UTILITIES */
+.gold-tag {
+    color: var(--color-gold);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.pill-button {
+    border-radius: 100px;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pill-button-dark {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+}
+
+.pill-button-dark:hover {
+    background-color: var(--color-gold);
+}
+
+.pill-button-ghost {
+    border: 1px solid var(--color-stone-border);
+    color: var(--color-ink);
+}
+
+.pill-button-ghost:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+/* ANIMATION CLASSES */
+.animate-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
